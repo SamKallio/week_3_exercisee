@@ -1,0 +1,19 @@
+extends layout
+append head
+    script(src=('/../javascripts/front.js') defer type='text/javascript')
+    In
+block content
+  h1= title
+  p Week 3 Exercise
+  p My todos
+  input#input-name(type="text", placeholder="Name")
+  input#input-task(type="text", placeholder="Task")
+  button#submit-data Submit
+  p#p-result
+  br
+  input#search-name(type="text", placeholder="Search Name")
+  button#search Search
+  p#search-result
+  button#delete-user Delete user
+  p#delete-result
+  In
